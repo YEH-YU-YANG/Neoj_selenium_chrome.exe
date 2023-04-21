@@ -1,11 +1,10 @@
----
-tags: sprout
----
+# Neoj爬蟲,模擬人類複製貼上
 
-# Neoj爬蟲
-
-連接不了 $Neoj$ 能夠看到學生 $code$ 的 $api$，總是 response<500> 。
+連接不了 $Neoj$ 能夠看到學生 $code$ 的 $API$，總是 response<500> 。
 只能採用腳本刷新 $challenge$ 頁面，並複製 $code$，貼上到本地檔案內，在用 $standford moss$ 比對抄襲。
+
+這個方法是笨、慢、負擔很大，期望未來有講師成功串起 $API$，或開發出更厲害的腳本。
+
 環境 : windows64/ python3.9.6 / chrome 112.0.5615....
 
 ## 執行過程
@@ -38,9 +37,9 @@ login_button.click()
 ### pyautogui抓滑鼠左壓起始點
 ![](https://i.imgur.com/M6DfFyk.png)
 
-截圖左上角，如下圖
 ![](https://i.imgur.com/yTC5vbm.jpg)
 
+截圖左上角，如圖。
 把這張圖片放```{pwd}/{date}/{problem_id}```之下，e.g. ```Desktop/py/project/0308/289```
 
 滑鼠會偵測這張截圖的中心點，後續程式會把滑鼠下拉到code黑框的第一行，因此**截圖時一定要截到code黑框第一行的一半**，後續程式會把滑鼠用這張圖中心座標的y值的兩倍，下拉到那個地點，這樣會剛好拉到code第一行。
