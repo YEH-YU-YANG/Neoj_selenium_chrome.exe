@@ -7,6 +7,8 @@
 
 環境 : windows64/ python3.9.6 / chrome 112.0.5615....
 
+**2023/4/22更新:結果學弟馬上把API串起來......**
+
 ## 執行過程
 ![](https://i.imgur.com/1jg9LBA.gif)
 
