@@ -26,6 +26,8 @@
 得知google版本後，到[這裡](https://chromedriver.chromium.org/)下載對應版本和 OS 的 chrome.exe
 selenium會使用這個chrome.exe開啟網站，注意chrome.exe版本要抓對喔~，不然會閃退。
 
+解壓好的chrome.exe要放在這個檔案裏面，才能成功執行。
+
 ### selenium 登入 neoj
 
 ```cpp!
